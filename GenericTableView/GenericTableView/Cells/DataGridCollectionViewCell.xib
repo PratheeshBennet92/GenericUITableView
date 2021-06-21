@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DataGridCollectionViewCell" id="gTV-IL-0wX" customClass="DataGridCollectionViewCell" customModule="TV_Lineup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXm-Xq-pAQ">
+                        <rect key="frame" x="45" y="15" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9ai-c0-u4V"/>
+                            <constraint firstAttribute="width" constant="50" id="uSI-XB-3ct"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.25098039220000001" green="0.0" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ0-o8-jce">
+                        <rect key="frame" x="5" y="0.0" width="50" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Lt4-vR-6Hl"/>
+                            <constraint firstAttribute="width" constant="50" id="m0b-l5-cjn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <color key="textColor" red="0.25098039220000001" green="0.0" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw8-9U-oRj">
+                        <rect key="frame" x="57.5" y="37" width="25" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Ct6-dh-qEx"/>
+                            <constraint firstAttribute="height" constant="17" id="Kma-13-DP0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" red="0.25098039220000001" green="0.0" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JJ0-o8-jce" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="40B-Zq-JbS"/>
+                <constraint firstItem="Iw8-9U-oRj" firstAttribute="centerX" secondItem="DXm-Xq-pAQ" secondAttribute="centerX" id="DpZ-TT-lRe"/>
+                <constraint firstItem="Iw8-9U-oRj" firstAttribute="top" secondItem="DXm-Xq-pAQ" secondAttribute="bottom" constant="2" id="PKe-36-sGE"/>
+                <constraint firstItem="DXm-Xq-pAQ" firstAttribute="leading" secondItem="JJ0-o8-jce" secondAttribute="trailing" constant="-10" id="QM0-GN-5bV"/>
+                <constraint firstItem="DXm-Xq-pAQ" firstAttribute="centerY" secondItem="JJ0-o8-jce" secondAttribute="centerY" multiplier="0.72" id="UJH-ww-BmZ"/>
+                <constraint firstItem="JJ0-o8-jce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sQH-Dl-fug"/>
+            </constraints>
+            <size key="customSize" width="234" height="120"/>
+            <connections>
+                <outlet property="lblDate" destination="Iw8-9U-oRj" id="PvL-2W-9jf"/>
+                <outlet property="lblDay" destination="JJ0-o8-jce" id="XeE-YS-N4e"/>
+                <outlet property="lblMonth" destination="DXm-Xq-pAQ" id="Ibu-1Q-Lna"/>
+            </connections>
+            <point key="canvasLocation" x="-494.20289855072468" y="-48.883928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
