@@ -1,5 +1,5 @@
 import UIKit
-protocol ListItemCallBacK: class {
+protocol ListDataSource: AnyObject {
 
 }
 class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSObject, UITableViewDataSource where Cell: UITableViewCell {
@@ -11,9 +11,9 @@ class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSO
   }
   var dataSetCallback: (() -> Void)?
   var configurator: CellConfigurator<Cell, DataType>!
-  weak var delegate: ListItemCallBacK?
+  weak var delegate: ListDataSource?
   // MARK: Methods
-  init(delegate: ListItemCallBacK) {
+  init(delegate: ListDataSource) {
     self.delegate = delegate
   }
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

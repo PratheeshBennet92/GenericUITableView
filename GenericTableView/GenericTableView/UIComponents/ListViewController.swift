@@ -2,7 +2,7 @@ import UIKit
 class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController, UINavigationControllerDelegate, UIScrollViewDelegate where Cell: UITableViewCell {
   // MARK: Property Declrations
   var selectedCallback: ((ListUIModel) -> Void)?
-  var viewModel: ViewModelProtocol?
+  var viewModel: ListViewModelProtocol?
   private lazy var listTableView: UITableView = {
     let table = UITableView()
     table.translatesAutoresizingMaskIntoConstraints = false
@@ -30,7 +30,7 @@ class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewCo
   init() {
     super.init(nibName: nil, bundle: nil)
   }
-  convenience init(viewModel: ViewModelProtocol) {
+  convenience init(viewModel: ListViewModelProtocol) {
     self.init()
     self.viewModel = viewModel
   }
@@ -64,10 +64,10 @@ class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewCo
     listTableView.reloadData()
   }
 }
-extension ListViewController: ListItemCallBacK {
+extension ListViewController: ListDataSource {
   
 }
-extension ListViewController: ListCallBacK {
+extension ListViewController: ListDelegates {
   func didSelectionOfRow(_ indexPath: IndexPath) {
     if let selectedModel = listDataSource?.dataSource?[indexPath.row] as? ScheduleUIModel {
     selectedCallback?(selectedModel)
