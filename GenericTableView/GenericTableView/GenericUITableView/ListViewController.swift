@@ -1,5 +1,5 @@
 import UIKit
-class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController, UINavigationControllerDelegate, UIScrollViewDelegate where Cell: UITableViewCell {
+class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController where Cell: UITableViewCell {
   // MARK: Property Declrations
   var selectedCallback: ((ListUIModel) -> Void)?
   var viewModel: ListViewModelProtocol?

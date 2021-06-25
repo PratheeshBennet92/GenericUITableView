@@ -22,7 +22,7 @@
 		4A63CC822680A64E00AA0332 /* DynamicDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */; };
 		4A63CC892680A73B00AA0332 /* CoreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC882680A73B00AA0332 /* CoreProtocols.swift */; };
 		4A63CC992680A9AC00AA0332 /* ScheduleUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC962680A9AC00AA0332 /* ScheduleUIModel.swift */; };
-		4A63CC9B2680A9AC00AA0332 /* UIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC982680A9AC00AA0332 /* UIModel.swift */; };
+		4A63CC9B2680A9AC00AA0332 /* ListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC982680A9AC00AA0332 /* ListUIModel.swift */; };
 		4A63CCA12680AB1400AA0332 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC9D2680AB1400AA0332 /* CardCell.swift */; };
 		4A63CCA42680AB1400AA0332 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A63CCA02680AB1400AA0332 /* CardCell.xib */; };
 		76E7B7FD9FD1025203103019 /* Pods_GenericTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0780565D5BBEDB16ADCCAFEC /* Pods_GenericTableView.framework */; };
@@ -74,7 +74,7 @@
 		4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicDataCell.swift; sourceTree = "<group>"; };
 		4A63CC882680A73B00AA0332 /* CoreProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreProtocols.swift; sourceTree = "<group>"; };
 		4A63CC962680A9AC00AA0332 /* ScheduleUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleUIModel.swift; sourceTree = "<group>"; };
-		4A63CC982680A9AC00AA0332 /* UIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIModel.swift; sourceTree = "<group>"; };
+		4A63CC982680A9AC00AA0332 /* ListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUIModel.swift; sourceTree = "<group>"; };
 		4A63CC9D2680AB1400AA0332 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		4A63CCA02680AB1400AA0332 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		9D39E26C03BDD26BD22ACE6A /* Pods-GenericTableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericTableViewTests.debug.xcconfig"; path = "Target Support Files/Pods-GenericTableViewTests/Pods-GenericTableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4A63CC952680A9AC00AA0332 /* Entity */,
-				4A63CC6F2680A64E00AA0332 /* UIComponents */,
+				4A63CC6F2680A64E00AA0332 /* GenericUITableView */,
 				4A63CC872680A73B00AA0332 /* Protocols */,
 				4A63CC9C2680AB1400AA0332 /* Cells */,
 				4A63CC3D2680A14100AA0332 /* AppDelegate.swift */,
@@ -179,7 +179,7 @@
 			path = GenericTableViewUITests;
 			sourceTree = "<group>";
 		};
-		4A63CC6F2680A64E00AA0332 /* UIComponents */ = {
+		4A63CC6F2680A64E00AA0332 /* GenericUITableView */ = {
 			isa = PBXGroup;
 			children = (
 				4A63CC702680A64E00AA0332 /* ListViewController.swift */,
@@ -188,7 +188,7 @@
 				4A63CC732680A64E00AA0332 /* ListTableViewDelegate.swift */,
 				4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */,
 			);
-			path = UIComponents;
+			path = GenericUITableView;
 			sourceTree = "<group>";
 		};
 		4A63CC872680A73B00AA0332 /* Protocols */ = {
@@ -203,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				4A63CC962680A9AC00AA0332 /* ScheduleUIModel.swift */,
-				4A63CC982680A9AC00AA0332 /* UIModel.swift */,
+				4A63CC982680A9AC00AA0332 /* ListUIModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A63CC9B2680A9AC00AA0332 /* UIModel.swift in Sources */,
+				4A63CC9B2680A9AC00AA0332 /* ListUIModel.swift in Sources */,
 				4A63CCA12680AB1400AA0332 /* CardCell.swift in Sources */,
 				4A63CC802680A64E00AA0332 /* ListTableViewDelegate.swift in Sources */,
 				4A63CC892680A73B00AA0332 /* CoreProtocols.swift in Sources */,
