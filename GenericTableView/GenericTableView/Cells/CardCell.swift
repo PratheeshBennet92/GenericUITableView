@@ -2,12 +2,9 @@ import UIKit
 class CardCell: UITableViewCell, DynamicDataCell {
   var buttonPressedAction: ((ScheduleUIModel?) -> Void)?
   typealias DataType =  ScheduleUIModel
-  @IBOutlet weak var imgView: UIImageView!
-  @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var containerView: UIView!
-  @IBOutlet weak var shadowView: UIView!
-  @IBOutlet weak var lblNetwork: UILabel!
+
   override func awakeFromNib() {
     super.awakeFromNib()
     configureCell()

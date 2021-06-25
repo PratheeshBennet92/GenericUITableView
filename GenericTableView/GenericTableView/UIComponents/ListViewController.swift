@@ -1,8 +1,7 @@
 import UIKit
 class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController, UINavigationControllerDelegate, UIScrollViewDelegate where Cell: UITableViewCell {
   // MARK: Property Declrations
-  private var spinner = SpinnerController()
-  var selectedCallback: ((ScheduleUIModel) -> Void)?
+  var selectedCallback: ((ListUIModel) -> Void)?
   var viewModel: ViewModelProtocol?
   lazy var listTableView: UITableView = {
     let table = UITableView()

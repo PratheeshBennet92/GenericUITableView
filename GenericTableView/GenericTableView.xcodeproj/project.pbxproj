@@ -19,7 +19,6 @@
 		4A63CC7E2680A64E00AA0332 /* ListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC712680A64E00AA0332 /* ListTableViewDataSource.swift */; };
 		4A63CC7F2680A64E00AA0332 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC722680A64E00AA0332 /* CellConfigurator.swift */; };
 		4A63CC802680A64E00AA0332 /* ListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC732680A64E00AA0332 /* ListTableViewDelegate.swift */; };
-		4A63CC812680A64E00AA0332 /* SpinnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC742680A64E00AA0332 /* SpinnerController.swift */; };
 		4A63CC822680A64E00AA0332 /* DynamicDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */; };
 		4A63CC892680A73B00AA0332 /* CoreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC882680A73B00AA0332 /* CoreProtocols.swift */; };
 		4A63CC992680A9AC00AA0332 /* ScheduleUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A63CC962680A9AC00AA0332 /* ScheduleUIModel.swift */; };
@@ -72,7 +71,6 @@
 		4A63CC712680A64E00AA0332 /* ListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewDataSource.swift; sourceTree = "<group>"; };
 		4A63CC722680A64E00AA0332 /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 		4A63CC732680A64E00AA0332 /* ListTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewDelegate.swift; sourceTree = "<group>"; };
-		4A63CC742680A64E00AA0332 /* SpinnerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerController.swift; sourceTree = "<group>"; };
 		4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicDataCell.swift; sourceTree = "<group>"; };
 		4A63CC882680A73B00AA0332 /* CoreProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreProtocols.swift; sourceTree = "<group>"; };
 		4A63CC962680A9AC00AA0332 /* ScheduleUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleUIModel.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 				4A63CC712680A64E00AA0332 /* ListTableViewDataSource.swift */,
 				4A63CC722680A64E00AA0332 /* CellConfigurator.swift */,
 				4A63CC732680A64E00AA0332 /* ListTableViewDelegate.swift */,
-				4A63CC742680A64E00AA0332 /* SpinnerController.swift */,
 				4A63CC752680A64E00AA0332 /* DynamicDataCell.swift */,
 			);
 			path = UIComponents;
@@ -442,7 +439,6 @@
 				4A63CC892680A73B00AA0332 /* CoreProtocols.swift in Sources */,
 				4A63CC7E2680A64E00AA0332 /* ListTableViewDataSource.swift in Sources */,
 				4A63CC422680A14100AA0332 /* ViewController.swift in Sources */,
-				4A63CC812680A64E00AA0332 /* SpinnerController.swift in Sources */,
 				4A63CC992680A9AC00AA0332 /* ScheduleUIModel.swift in Sources */,
 				4A63CC3E2680A14100AA0332 /* AppDelegate.swift in Sources */,
 				4A63CC7D2680A64E00AA0332 /* ListViewController.swift in Sources */,
