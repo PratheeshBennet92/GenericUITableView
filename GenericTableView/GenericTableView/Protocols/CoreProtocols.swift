@@ -6,7 +6,7 @@ protocol Viewable {
   func addObserver()
 }
 protocol ViewModelProtocol {
-  var outputModel: [UIModel]? {get set}
+  var outputModel: [ListUIModel]? {get set}
   func startViewModel()
 }
 

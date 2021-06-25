@@ -1,5 +1,6 @@
 import Foundation
-struct ScheduleUIModel: UIModel, Codable {
+struct ScheduleUIModel: ListUIModel, Codable {
+  var identifier: String? = String(describing: Self.self)
   var id: Int?
   var time: String?
   var name: String?

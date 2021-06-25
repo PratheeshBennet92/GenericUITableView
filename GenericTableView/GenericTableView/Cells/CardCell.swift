@@ -34,5 +34,4 @@ class CardCell: UITableViewCell, DynamicDataCell {
   func configure(_ dataType: ScheduleUIModel?) {
     titleLabel.text = dataType?.name
   }
-  
 }

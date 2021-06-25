@@ -2,9 +2,9 @@ import UIKit
 protocol ListItemCallBacK: class {
 
 }
-class ListTableViewDataSource<Cell: DynamicDataCell, DataType: UIModel>: NSObject, UITableViewDataSource where Cell: UITableViewCell {
+class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSObject, UITableViewDataSource where Cell: UITableViewCell {
   // MARK: Property Declrations
-  var dataSource: [UIModel]? {
+  var dataSource: [ListUIModel]? {
     didSet {
       self.dataSetCallback?()
     }
