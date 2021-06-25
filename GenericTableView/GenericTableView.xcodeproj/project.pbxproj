@@ -146,8 +146,8 @@
 		4A63CC3C2680A14100AA0332 /* GenericTableView */ = {
 			isa = PBXGroup;
 			children = (
-				4A63CC952680A9AC00AA0332 /* Entity */,
 				4A63CC6F2680A64E00AA0332 /* GenericUITableView */,
+				4A63CC952680A9AC00AA0332 /* Entity */,
 				4A63CC9C2680AB1400AA0332 /* Cells */,
 				4A63CC3D2680A14100AA0332 /* AppDelegate.swift */,
 				4A63CC3F2680A14100AA0332 /* SceneDelegate.swift */,
