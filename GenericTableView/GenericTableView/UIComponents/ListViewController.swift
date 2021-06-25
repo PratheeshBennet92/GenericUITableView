@@ -3,7 +3,7 @@ class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewCo
   // MARK: Property Declrations
   var selectedCallback: ((ListUIModel) -> Void)?
   var viewModel: ViewModelProtocol?
-  lazy var listTableView: UITableView = {
+  private lazy var listTableView: UITableView = {
     let table = UITableView()
     table.translatesAutoresizingMaskIntoConstraints = false
     table.separatorStyle = .none
